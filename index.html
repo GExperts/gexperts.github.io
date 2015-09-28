@@ -2,58 +2,91 @@
 layout: index
 title: Home
 permalink: /
+carousel:
+- single01.jpg
+- single02.jpg
+- single03.jpg
 ---
 
-<div id="service">
+<div id="headerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>(PREVIEW - this Website is a preview - <a href="http://gexperts.org">here is the current website</a>)</h3>
+                <h3>Productivity Extensions for your favorite IDE</h3>
+                <h1>GExperts</h1>
+                <h5>{{ site.about }}</h5>
+            </div>
+        </div>
+        <div class="row" style="margin-top:2em;">
+            <div>
+                {% include carousel.html %}
+            </div>
+        </div><!-- /row -->
+        <div class="row" style="margin-top: 2em;">
+            <a class="btn btn-warning btn-lg" href="{{ prepend: site.baseurl }}/download">&nbsp;&nbsp;<span class="glyphicon glyphicon-cloud-download"></span>&nbsp;Download Now&nbsp;&nbsp;</a>
+            <p>Installation is just a double click.</p>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /headerwrap -->
+
+<div id="service" style="margin-top:2em;">
     <div class="container">
         <div class="row centered">
             <div class="col-md-4">
-                <i class="fa fa-heart-o"></i>
-                <h4>Handsomely Crafted</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+                <i class="fa fa-star-o"></i>
+                <h4>Feature Packed</h4>
+                <p>GExperts features hundreds of IDE enhancements. From Codenavigation to editor improvements. It's configurable so it'll fit your workflow.</p>
+                <p><br/><a href="{{ prepend: site.baseurl }}/features" class="btn btn-theme">More Info</a></p>
             </div>
             <div class="col-md-4">
-                <i class="fa fa-flask"></i>
-                <h4>Retina Ready</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+                <i class="fa fa-clock-o"></i>
+                <h4>Since 1996</h4>
+                <p>GExperts is here since the beginning and it's here to stay. It adapted fast to new releases and supports a broad range of IDE versions.</p>
+
+                <!-- <p><br/><a href="#" class="btn btn-theme">More Info</a></p> -->
             </div>
             <div class="col-md-4">
                 <i class="fa fa-trophy"></i>
-                <h4>Quality Theme</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>		 				
+                <h4>High Quality Code</h4>
+                <p>If you like to compile GExperts yourself - fear not! It just compiles. No special environment need, no search paths missing, it just works.</p>
+                <p><br/><a href="{{ prepend: site.baseurl }}/faq-developer" class="btn btn-theme">More Info</a></p>
+            </div>
         </div>
-    </div><! --/container -->
-</div><! --/service -->
-
-{% include portfolio.html title="LATEST WORKS" limit=10 %}
+    </div><!--/container -->
+</div><!--/service -->
 
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About Our Agency.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
-        </div>
-
-        <div class="col-lg-3">
             <h4>Latest Posts</h4>
             <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %} 
+            {% for post in site.categories['blog'] limit:5 %}
                 <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %} 
+            {% endfor %}
+            <p><i class="fa fa-ellipsis-h fa-fw"></i></p>
+            <a href="{{ prepend: site.baseurl }}/blog"><i class="fa fa-arrow-circle-o-right fa-fw"></i>&nbsp;See all</a>
         </div>
 
-    </div><! --/row -->
-</div><! --/container -->
+        <div class="col-lg-3">
+            <h4>Frequently Asked - User</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['faq-user'] limit:5 %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            {% endfor %}
+            <p><i class="fa fa-ellipsis-h fa-fw"></i></p>
+            <a href="{{ prepend: site.baseurl }}/faq-user"><i class="fa fa-arrow-circle-o-right fa-fw"></i>&nbsp;See all</a>
+        </div>
+
+        <div class="col-lg-3">
+            <h4>Frequently Asked - Devloper</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['faq-developer'] limit:5 %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            {% endfor %}
+            <p><i class="fa fa-ellipsis-h fa-fw"></i></p>
+            <a href="{{ prepend: site.baseurl }}/faq-developer"><i class="fa fa-arrow-circle-o-right fa-fw"></i>&nbsp;See all</a>
+        </div>
+
+    </div><!--/row -->
+</div><!--/container -->

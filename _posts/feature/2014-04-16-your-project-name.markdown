@@ -1,11 +1,12 @@
 ---
-layout: project
-title:  "YOUR PROJECT NAME"
+layout: feature
+title:  "Feature 2"
 date:   2014-04-25 16:54:46
-author: Marcel Newman
+author: Lorem Ipsum
 categories:
-- project
-img: portfolio_01.jpg
+- feature
+img: portfolio_09.jpg
+thumb: thumb02.jpg
 carousel:
 - single01.jpg
 - single02.jpg

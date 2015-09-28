@@ -1,0 +1,25 @@
+---
+layout: faq
+title: Frequently Asked Questions
+permalink: /faq/
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>User</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['faq-user'] %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            {% endfor %}
+        </div>
+
+        <div class="col-lg-6">
+            <h4>Developer</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['faq-developer'] %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            {% endfor %}
+        </div>
+    </div><!--/row -->
+</div><!--/container -->

@@ -7,16 +7,17 @@
                 <p>{{ site.about }}</p>
             </div>
             <div class="col-lg-4">
-                <h4>Social Links</h4>
+                <h4>Open Source on GitHub</h4>
                 <div class="hline-w"></div>
+                <a href="https://github.com/GExperts/gexperts">
                 <p>
-                    {% for network in site.social %}
-                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
-                    {% endfor %}
+                    Find GExperts' sources on GitHub. We love pull requests!
                 </p>
+                <img src="{{ site.baseurl }}/assets/img/github-logo.png" style="width: 100px; heigth: auto;"></a>
+                <div style="height:2em;"></div>
             </div>
             <div class="col-lg-4">
-                <h4>Our Bunker</h4>
+                <h4>Contact</h4>
                 <div class="hline-w"></div>
                 <p>
                     {% for line in site.address.first.lines %}

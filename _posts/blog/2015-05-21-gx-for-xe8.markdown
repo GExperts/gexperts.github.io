@@ -1,0 +1,12 @@
+---
+layout: post
+title: "GExperts 1.37 for RAD Studio XE8"
+date: 2015-05-21
+categories:
+- blog
+- News
+---
+
+GExperts 1.37 for RAD Studio XE8 is now available for [download][download]. We've done some testing with XE8, but please report any issues you find using the bug reporting tool in the about box.
+
+[download]: {{ site.baseurl }}/download/

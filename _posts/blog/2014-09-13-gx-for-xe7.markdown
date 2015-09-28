@@ -1,0 +1,12 @@
+---
+layout: post
+title: "GExperts 1.37 for RAD Studio XE7"
+date: 2014-09-13
+categories:
+- blog
+- News
+---
+
+GExperts 1.37 for RAD Studio XE7 is now available for [download][download]. We've only done minimal testing with XE7, so please report any issues you find using the bug reporting tool in the about box.
+
+[download]: {{ site.baseurl }}/download/

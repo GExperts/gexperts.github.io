@@ -1,11 +1,12 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SOLID.
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: GExperts
+description: "Programmingtools for Delphi and C++ Builder"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://yourdomain.com"
+headerlogo: gexperts-header.png
 
 # Build settings
 markdown: kramdown
@@ -13,15 +14,17 @@ permalink: /:categories/:title
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 
 colors:  #in hex code if not noted else
-  primary: "#00b3fe" #"#F70031" 
-  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  primary: "#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
   secondary: "#384452" #"#33004D"
-  link: "#428bca"
-  link_hover: "#01b2fe"
+  link: "#428bca" # "#19344b"
+  link_hover: "#01b2fe" # "#254d70"
+  link_footer: "#ffffff" # "#428bca"
+  link_footer_hover: "#bfc9d3" # "#01b2fe"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
-  
-  
+
+
 ### CONTACT SETTINGS ###
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
@@ -31,24 +34,22 @@ social:
   - title: facebook
     url:
   - title: twitter
-    url: 
+    url:
   - title: instagram
-    url: 
+    url:
   - title: tumblr
-    url: 
-    
+    url:
+
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
-  - lines: 
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+  - lines:
+    - <a href="/contact/">Contact</a>
+email:
+tel:
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
-    
+
 # Members information. Shown on About page.
 members:
   - name: Mark Webber
@@ -87,7 +88,7 @@ members:
         url: mailto:name@domain.com
       - title: twitter
         url: http://twitter.com/handle
-    
+
 # Clients information. Shown on Home and About pages.
 clients:
   - name: dribbble
@@ -98,12 +99,12 @@ clients:
     img: client03.png
   - name: VimeoPro
     img: client04.png
-    
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
-# Testimonial content. Shown on Home and About page. 
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "GExperts is a free set of tools built to increase the productivity of Delphi and C++Builder programmers by adding several features to the IDE.  GExperts is developed as Open Source software and we encourage user contributions to the project."
+
+# Testimonial content. Shown on Home and About page.
 testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO
+    message: "The first thing I do after installing Delphi is installing GExperts. I feel handicapped without. I especially like the \"Open File\"-Dialog to navigate in my project and the \"Uses Clause Manager\" to quickly add units to the current file."
+    author: Steffen Binas
+    position: Developer - <a href="http://www.aquasoft.net">AQUASOFT.NET</a>
